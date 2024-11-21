@@ -18,10 +18,10 @@ void leapyr();
 void checkDigi_alphabet_Special();
 void palindromechecker();
 void menu2();
-void basiccalculator(); // menu2
+void basiccalculator(); 
 void BMI();
 void Currency();
-void grade(); // result menu must
+void grade(); 
 void resultsheet();
 void agecalculator();
 void temparatureconverter();
