@@ -21,7 +21,7 @@ void menu2();
 void basiccalculator(); // menu2
 void BMI();
 void Currency();
-void grade(); 
+void grade(); // result menu must
 void resultsheet();
 void agecalculator();
 void temparatureconverter();
@@ -525,32 +525,32 @@ void menu2()
 }
 void basiccalculator()
 {
-    int a, b, result;
+    float a, b,result;
     char operator, Return;
-
+    
     printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    scanf("%f %f", &a, &b);
     printf("Choose an operator (+, -, *, /, %%): ");
     scanf(" %c", &operator);
     switch (operator)
     {
     case '+':
         result = a + b;
-        printf("%d + %d = %d\n", a, b, result);
+        printf("%.1f + %.1f = %.1f\n", a, b, result);
         break;
     case '-':
         result = a - b;
-        printf("%d - %d = %d\n", a, b, result);
+        printf("%.1f - %.1f = %.1f\n", a, b, result);
         break;
     case '*':
         result = a * b;
-        printf("%d * %d = %d\n", a, b, result);
+        printf("%.1f * %.1f = %.1f\n", a, b, result);
         break;
     case '/':
         if (b != 0)
         {
             result = a / b;
-            printf("%d / %d = %d\n", a, b, result);
+            printf("%.2f / %.2f = %.2f\n", a, b, result);
         }
         else
         {
@@ -560,8 +560,8 @@ void basiccalculator()
     case '%':
         if (b != 0)
         {
-            result = a % b;
-            printf("%d %% %d = %d\n", a, b, result);
+            result = (int)a % (int)b;
+            printf("%.2f %% %.2f = %d\n", a, b, (int)result);
         }
         else
         {
