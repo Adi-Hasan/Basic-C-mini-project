@@ -21,7 +21,7 @@ void menu2();
 void basiccalculator(); // menu2
 void BMI();
 void Currency();
-void grade(); // result menu must
+void grade(); 
 void resultsheet();
 void agecalculator();
 void temparatureconverter();
